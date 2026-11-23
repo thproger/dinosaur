@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Лабораторні роботи 7–10</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <div class="dvd-logo" id="dvd-logo" aria-hidden="true">
+    <img src="./chnu-logo-transparent.png" alt="">
+    <span>ім. Петра Могили</span>
+  </div>
+
+  <main class="page">
+    <header class="intro">
+      <p class="eyebrow">Лабораторні роботи № 7–10</p>
+      <h1>Мої застосунки</h1>
+      <p>Оберіть проєкт, щоб відкрити його в браузері.</p>
+    </header>
+
+    <nav class="apps" aria-label="Застосунки">
+      <a href="https://thproger.github.io/quizlet/"><span class="number">01</span><span><strong>Квізлет</strong><small>Тести та запитання</small></span><span class="arrow" aria-hidden="true">↗</span></a>
+      <a href="https://thproger.github.io/cards/"><span class="number">02</span><span><strong>Картки</strong><small>Навчальні картки</small></span><span class="arrow" aria-hidden="true">↗</span></a>
+      <a href="https://thproger.github.io/casino/"><span class="number">03</span><span><strong>Казино</strong><small>Демонстраційна гра</small></span><span class="arrow" aria-hidden="true">↗</span></a>
+      <a href="https://thproger.github.io/magic-ball/"><span class="number">04</span><span><strong>Magic Ball</strong><small>Магічна куля</small></span><span class="arrow" aria-hidden="true">↗</span></a>
+    </nav>
+
+    <section class="runner" aria-labelledby="runner-title">
+      <div class="runner-header"><div><h2 id="runner-title">Мінігра: біг із перешкодами</h2><p>Стрибайте через Word, пригинайтеся під манго.</p></div><div class="score">Рахунок <strong id="score">00000</strong></div></div>
+      <canvas id="game" height="220" aria-label="Бігова доріжка: стрибок через значки Word і пригинання під манго"></canvas>
+      <div class="runner-controls"><span id="game-message" role="status" aria-live="polite">Пробіл або ↑ — стрибок. Утримуйте ↓ або S — пригинання.</span><div class="runner-actions"><button id="jump-button" type="button">↑ Стрибок</button><button id="duck-button" type="button">↓ Пригнутися</button><button id="game-start" type="button">Почати гру</button></div></div>
+    </section>
+
+    <footer>Емблема: <a href="https://dspace.chmnu.edu.ua/jspui/">ЧНУ імені Петра Могили</a></footer>
+  </main>
+</body>
+</html>
